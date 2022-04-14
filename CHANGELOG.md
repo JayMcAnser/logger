@@ -2,6 +2,9 @@
 
 # Logger Revisions
 
+## 2022-04-14
+- upd: update every thing with ncu
+
 ## 2020-10-28
 - fix: throws error if unable to create directory 
 

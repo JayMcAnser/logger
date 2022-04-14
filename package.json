@@ -1,6 +1,6 @@
 {
   "name": "logger",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "Log information",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   "author": "Jay Mc Anser",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.0"
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
   },
   "dependencies": {
-    "minimist": ">=1.2.5",
-    "winston": "^3.3.3",
-    "winston-loggly-bulk": "^3.1.1",
+    "minimist": ">=1.2.6",
+    "winston": "^3.7.2",
+    "winston-loggly-bulk": "^3.2.1",
     "winston-mail": "^2.0.0",
-    "winston-slack-webhook-transport": "^2.0.0"
+    "winston-slack-webhook-transport": "^2.1.0"
   }
 }
