@@ -2,6 +2,9 @@
 
 # Logger Revisions
 
+## 2022-08-16 V0.11.0
+- fix: absolute path in the logger
+
 ## 2022-04-14
 - upd: update every thing with ncu
 

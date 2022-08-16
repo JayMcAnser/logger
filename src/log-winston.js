@@ -49,9 +49,11 @@ class LogWinston extends Logger {
             if (!trans.hasOwnProperty('filename')) {
               throw new Error(`missing filename for file[${l}]`);
             }
-            this._rootDir = options.hasOwnProperty('rootDirectory') ? options.rootDirectory : Path.join(__dirname, '../../..');
-            if (this._rootDir.substring(0, 1) !== '/') {
-              this._rootDir = Path.join(__dirname, '../../..', this._rootDir)
+            this._rootDir = options.hasOwnProperty('rootDirectory') ? options.rootDirectory : Path.join(__dirname, '..', '..');
+            // v0.11.0
+            if (!Path.isAbsolute(this._rootDir)) {
+            // if (this._rootDir.substring(0, 1) !== '/') {
+              this._rootDir = Path.join(__dirname, Path.join('..', '..', '..'), this._rootDir)
             }
             if (!fs.existsSync(this._rootDir)) {
               try {
