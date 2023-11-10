@@ -18,6 +18,6 @@
     "winston": "^3.7.2",
     "winston-loggly-bulk": "^3.2.1",
     "winston-mail": "^2.0.0",
-    "winston-slack-webhook-transport": "^2.1.0"
+    "winston-slack-webhook-transport": "^2.3.2"
   }
 }
